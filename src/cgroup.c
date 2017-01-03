@@ -24,7 +24,7 @@ bool create_cgroup(const char * name, const char * controllers) {
     cgroup = cgroup_new_cgroup(name);
 
     if (!cgroup) {
-        printf(stderr, "Error: failed to allocate cgroup\n");
+        fprintf(stderr, "Error: failed to allocate cgroup\n");
         return false;
     }
 
